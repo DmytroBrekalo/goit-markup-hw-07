@@ -634,7 +634,8 @@ address{
     text-decoration-line: none;
 }
 
-.card .item:hover{
+.card .item:hover,
+.card .item:focus{
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
@@ -682,7 +683,8 @@ address{
     transform: translateY(0%);
 } */
 
-.card-container:hover .overlay {    
+.card-link:hover .overlay,
+.card-link:focus .overlay {    
     transform: translateY(0);
 }
 
