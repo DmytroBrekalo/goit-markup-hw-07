@@ -16,8 +16,8 @@
     <header class="head-list">
       <div class="container main-nav">
         <nav class="head-list__nav">
-          <a href="index.html" class="logo">
-            Web<span class="accent-head">Studio</span>
+          <a href="index.html" class="head-list__logo">
+            Web<span class="head-list__accent">Studio</span>
           </a>
 
           <ul class="site-nav">
@@ -374,60 +374,62 @@
     <footer class="page-foot">
       <div class="container">
         <div class="footer-content">
-          <div class="adress-block">
-            <a href="./index.html" class="logo-foot">
-              <p>Web<span class="accent-foot">Studio</span></p>
+          <div class="page-foot__address-block">
+            <a href="./index.html" class="page-foot__logo">
+              <p>Web<span class="page-foot__accent">Studio</span></p>
             </a>
-            <address>
-              <ul class="contact-foot">
-                <li class="item">
+            <address class="address-list">
+              <ul class="address-list__contact">
+                <li class="address-list__item">
                   <a
                     href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    class="map"
+                    class="address-list__map"
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li class="item">
-                  <a href="mailto:info@devstudio.com" class="link"
+                <li class="address-list__item">
+                  <a href="mailto:info@devstudio.com" class="address-list__link"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="item">
-                  <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+                <li class="address-list__item">
+                  <a href="tel:+380961111111" class="address-list__link"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
           </div>
 
           <div class="social-foot">
-            <p class="foot-title">ПРИЄДНУЙТЕСЬ</p>
-            <ul class="social-links social-list">
-              <li class="social-items">
-                <a href="" class="social-circle foot-circle">
-                  <svg class="foot-icon" width="20" height="20">
+            <p class="social-foot__title">ПРИЄДНУЙТЕСЬ</p>
+            <ul class="social-foot__links">
+              <li class="social-foot__items">
+                <a href="" class="social-foot__circle">
+                  <svg class="social-foot__icon" width="20" height="20">
                     <use href="./images/icons.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-items">
-                <a href="" class="social-circle foot-circle">
-                  <svg class="foot-icon" width="20" height="20">
+              <li class="social-foot__items">
+                <a href="" class="social-foot__circle">
+                  <svg class="social-foot__icon" width="20" height="20">
                     <use href="./images/icons.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-items">
-                <a href="" class="social-circle foot-circle">
-                  <svg class="foot-icon" width="20" height="20">
+              <li class="social-foot__items">
+                <a href="" class="social-foot__circle">
+                  <svg class="social-foot__icon" width="20" height="20">
                     <use href="./images/icons.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-items">
-                <a href="" class="social-circle foot-circle">
-                  <svg class="social-icon foot-icon" width="20" height="20">
+              <li class="social-foot__items">
+                <a href="" class="social-foot__circle">
+                  <svg class="social-foot__icon" width="20" height="20">
                     <use href="./images/icons.svg#linkedin"></use>
                   </svg>
                 </a>
@@ -435,20 +437,24 @@
             </ul>
           </div>
 
-          <div class="footer-form-container">
-            <p class="foot-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
-            <form class="footer-form">
-              <label for="mail" class="footer-label"></label>
+          <div class="footer-form">
+            <p class="footer-form__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+            <form class="footer-form__form">
+              <label for="mail" class="footer-form__label"></label>
               <input
-                class="footer-input"
+                class="footer-form__input"
                 type="email"
                 name="mail"
                 id="mail"
                 placeholder="E-mail"
                 required
               />
-              <button class="button-footer" type="submit">
-                Підписатися<svg class="footer-icon" width="24" height="24">
+              <button class="footer-form__button" type="submit">
+                Підписатися<svg
+                  class="footer-form__icon"
+                  width="24"
+                  height="24"
+                >
                   <use href="./images/icons.svg#send-icon"></use>
                 </svg>
               </button>
@@ -460,76 +466,76 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-button" data-modal-close>
-          <svg class="close-icon" width="18px" height="18px">
+        <button type="button" class="modal__close-button" data-modal-close>
+          <svg class="modal__close-icon" width="18px" height="18px">
             <use href="./images/icons.svg#close-icon"></use>
           </svg>
         </button>
 
         <form class="form">
-          <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
+          <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
 
-          <label for="input-name" class="label"> Ім'я </label>
-          <div class="input-wrapper">
+          <label for="input-name" class="form__label"> Ім'я </label>
+          <div class="form__input-wrapper">
             <input
               type="text"
               name="name"
               id="input-name"
-              class="input input-field"
+              class="form__input form__input-field"
               required
             />
-            <svg class="input-icon" width="18" height="18">
+            <svg class="form__icon" width="18" height="18">
               <use href="./images/icons.svg#person-icon"></use>
             </svg>
           </div>
-          <label for="input-tel" class="label"> Телефон </label>
-          <div class="input-wrapper">
+          <label for="input-tel" class="form__label"> Телефон </label>
+          <div class="form__input-wrapper">
             <input
               type="tel"
               name="phone"
               id="input-tel"
-              class="input input-field"
+              class="form__input form__input-field"
               required
             />
-            <svg class="input-icon" width="18" height="18">
+            <svg class="form__icon" width="18" height="18">
               <use href="./images/icons.svg#phone-icon"></use>
             </svg>
           </div>
-          <label for="input-email" class="label"> Пошта </label>
-          <div class="input-wrapper">
+          <label for="input-email" class="form__label"> Пошта </label>
+          <div class="form__input-wrapper">
             <input
               type="email"
               name="email"
               id="input-email"
-              class="input input-field"
+              class="form__input form__input-field"
               required
             />
-            <svg class="input-icon" width="18" height="18">
+            <svg class="form__icon" width="18" height="18">
               <use href="./images/icons.svg#email-icon"></use>
             </svg>
           </div>
-          <label for="input-message" class="label"> Коментар </label>
+          <label for="input-message" class="form__label"> Коментар </label>
           <textarea
             name="message"
             id="input-message"
-            class="input message-area"
+            class="form__input form__message-area"
             placeholder="Введіть текст"
           ></textarea>
 
           <input class="checkbox" type="checkbox" name="policy" id="policy" />
-          <label class="checkbox-label" for="policy">
-            <span class="check-wrap">
-              <svg class="check-icon" width="11" height="8">
+          <label class="checkbox__label" for="policy">
+            <span class="checkbox__wrap">
+              <svg class="checkbox__icon" width="11" height="8">
                 <use href="./images/icons.svg#check-icon"></use>
               </svg>
             </span>
-            <span class="check-text">
+            <span class="checkbox__text">
               Погоджуюся з розсилкою та приймаю
-              <a href="#" class="check-link">Умови договору</a>
+              <a href="#" class="checkbox__link">Умови договору</a>
             </span>
           </label>
 
-          <button class="button form-button" type="submit">Відправити</button>
+          <button class="button form__button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
