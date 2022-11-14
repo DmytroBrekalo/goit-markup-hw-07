@@ -18,15 +18,6 @@
     margin-top: 20px;
 }
 
-.address-list__contact .address-list__link:hover,
-.address-list__link .address-list__link:focus {
-    color: var(--accent-color);
-}   
-
-.contact-foot {
-    margin-top: 20px;
-}
-
 .address-list__contact .address-list__link {
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.71;
@@ -34,6 +25,11 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .address-list__contact .address-list__map {
@@ -45,6 +41,10 @@
 
 .address-list__contact .address-list__item+.address-list__item {
     margin-top: 9px;
+}
+
+.contact-foot {
+    margin-top: 20px;
 }
 
 .social-foot {
@@ -71,11 +71,6 @@
     fill: var(--white-color);
 }
 
-.social-foot__circle:hover,
-.social-foot__circle:focus {
-    background: var(--accent-color);
-}
-
 .social-foot__circle {
     background-color: #44454E;
     display: flex;
@@ -88,6 +83,11 @@
     transition-property: background;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &focus {
+        background: var(--accent-color);
+    }
 }
 
 .footer-form {
@@ -108,15 +108,15 @@
     background-color: #2F303A;
     padding: 15px 16px;
     color: var(--white-color);
-}
 
-.footer-form__input::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    color: rgba(255, 255, 255, 0.6);
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
 .footer-form__button {
@@ -139,10 +139,10 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-form__button:hover {
-    background-color: #188CE8;
+    &:hover{
+        background-color: #188CE8;
+    }
 }
 
 .footer-form__icon {
