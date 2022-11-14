@@ -3,6 +3,13 @@
     padding-bottom: 94px;
 }
 
+.clients__title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+}
+
 .clients__list {
     display: flex;
     gap: 30px;
@@ -19,6 +26,17 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
+        &:hover,
+        &:focus {
+            .clients__icon{
+                fill: var(--accent-color);
+            }
+        }
 }
 
 .clients__icon {
@@ -30,12 +48,3 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
-    fill: var(--accent-color);
-}
-
-.clients__link:hover,
-.clients__link:focus {
-    border-color: var(--accent-color);
-}

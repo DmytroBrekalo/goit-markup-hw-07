@@ -1,16 +1,3 @@
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
-
 .feature {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -18,6 +5,9 @@
 
 .feature__list {
     display: flex;
+    .feature__item+.feature__item{
+        margin-left: 30px;
+    }
 }
 
 .thumb {
@@ -30,10 +20,6 @@
     width: 270px;
     min-height: 120px;
     text-align: center;
-}
-
-.feature__list .feature__item+.feature__item {
-    margin-left: 30px;
 }
 
 .feature__title {
